@@ -11,7 +11,7 @@ class Marine {
     Marine(); //기본 생성자
     Marine(int x, int y); //x,y 좌표에 생성
     Marine(int x, int y,const char* marine_name);
-    ~Marine();
+    ~Marine(); //destructor
 
     int attack(); //returns damage.
     void be_attacked(int damage_earn);//received damage
@@ -63,6 +63,7 @@ void Marine::show_status() {
   std::cout << " HP : " << hp << std::endl;
 }
 
+//destructor
 Marine::~Marine() {
   std::cout << name << " 의 소멸자 호출 ! " << std::endl;
   if (name != NULL) {
@@ -89,7 +90,7 @@ int main() {
     marines[0]->show_status();
     marines[1]->show_status();
 
-    delete marines[0];
+    delete marines[0]; //소멸자
     delete marines[1];
 
 }
