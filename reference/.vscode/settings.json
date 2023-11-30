@@ -51,12 +51,6 @@
         "xmemory": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp",
-        "functional": "cpp",
-        "list": "cpp",
-        "unordered_map": "cpp",
-        "vector": "cpp",
-        "xhash": "cpp",
-        "string": "cpp"
+        "xutility": "cpp"
     }
 }

@@ -26,7 +26,7 @@ class Marine {
 
 int Marine::total_marine_num = 0;
 void Marine::show_total_marine() {
-    std::count << "total marines are: " << total_marine_num << std::endl;
+    std::cout << "total marines are: " << total_marine_num << std::endl;
 }
 
 Marine::Marine()
@@ -61,8 +61,8 @@ void Marine::be_attacked(int damage_earn) {
 }
 */
 Marine& Marine::be_attacked(int damage_earn) {
-    hp -= damage_earn;
-    if (hp <= 0) is_dead = true;
+    this->hp -= damage_earn;
+    if (this->hp <= 0) this->is_dead = true;
 
     return *this;
 }
